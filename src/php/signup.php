@@ -16,7 +16,7 @@ $result = $mysqli->query($sql);
 //判断数据库中是否存在该数据，如果存在该数据，大于0
 if ($result->num_rows > 0) {
     echo '<script> alert("用户名已存在"); </script>';
-    echo '<script>location.href="../html/signin.html"</script>';
+    echo '<script>location.href="../html/signup.html"</script>';
 
     //关闭数据库
     $mysqli->close();

@@ -10,7 +10,7 @@ div {
   font-size: 12px;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 9999999;
   > .nav {
     width: 1180px;
     height: 40px;
@@ -340,7 +340,8 @@ div {
         float: left;
         width: 280px;
         height: 242px;
-        position: relative;
+        // position: relative;
+        transition: 0.3s;
         img {
           display: block;
           position: absolute;
@@ -349,7 +350,8 @@ div {
       > a:hover {
         box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
         opacity: 0.9;
-        top: -5px;
+        // top: -5px;
+        transform: translateY(-5px);
       }
     }
     > .h-m {
@@ -362,6 +364,7 @@ div {
       .h-m-f {
         width: 580px;
         position: relative;
+        transition: 0.3s;
       }
       a {
         display: block;
@@ -382,6 +385,7 @@ div {
         text-align: center;
         width: 280px;
         position: relative;
+        transition: 0.3s;
         .h-m-m-t {
           height: 20px;
           margin: 0 auto;
@@ -433,7 +437,8 @@ div {
       a:hover {
         box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
         opacity: 0.9;
-        top: -5px;
+        // top: -5px;
+        transform: translateY(-5px);
       }
       img {
         width: 100%;
@@ -483,10 +488,12 @@ div {
         height: 380px;
         float: left;
         position: relative;
+        transition: 0.3s;
       }
       .q-m-i:hover {
         box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
-        top: -5px;
+        // top: -5px;
+        transform: translateY(-5px);
       }
       > .ms {
         width: 940px;
@@ -502,6 +509,7 @@ div {
           margin-bottom: 20px;
           position: relative;
           width: 450px;
+          transition: 0.3s;
           > a {
             display: block;
             width: 160px;
@@ -572,7 +580,7 @@ div {
             }
             .r-b-f-redi {
               display: block;
-              width: 28px;
+              // width: 28px;
               height: 10px;
               border-radius: 5px;
               background: #ef312b;
@@ -585,17 +593,18 @@ div {
               position: absolute;
               top: 16px;
               right: 12px;
+              transition: 0.3s;
             }
           }
         }
         .ms-child:hover {
           box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
-          top: -5px;
+          // top: -5px;
+          transform: translateY(-5px);
         }
       }
     }
   }
-  //新品推荐
 }
 //底部
 .footer {
