@@ -11,7 +11,7 @@ import $ from "./lib/jquery.js";
       let temp = "";
       console.log(res);
       res.forEach((elm, i) => {
-        console.log(elm);
+        // console.log(elm);
         let picture = JSON.parse(elm.picture);
         let xx = 60 * elm.sold + "px";
         let txt = Math.floor(elm.sold * 100) + "%";

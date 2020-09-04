@@ -1,0 +1,496 @@
+@charset "utf-8";
+div {
+  margin: auto;
+}
+//头部导航栏
+.topb {
+  max-width: 1536px;
+  height: 40px;
+  background: #333;
+  font-size: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 900999;
+  > .nav {
+    width: 1180px;
+    height: 40px;
+    margin: auto;
+    background: #333;
+    > .nav-left {
+      float: left;
+      height: 100%;
+      > a {
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        height: 100%;
+        line-height: 20px;
+        margin-right: 25px;
+        padding: 10px 0;
+      }
+    }
+    > .nav-right {
+      float: right;
+      height: 100%;
+      > a {
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        display: inline-block;
+        height: 100%;
+        line-height: 20px;
+        margin-left: 25px;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+//logo 搜索框
+.lgsb {
+  width: 100%;
+  height: 100px;
+  > .lgsb-main {
+    width: 1180px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    > .padd {
+      width: 1180px;
+      height: 40px;
+      padding-top: 33.33333px;
+      > a {
+        display: block;
+        float: left;
+      }
+      .a2,
+      .a3 {
+        font-size: 16px;
+        color: #333333;
+        line-height: 30px;
+        padding-bottom: 10px;
+      }
+      .a2 {
+        margin: 0 50px;
+      }
+      > .lgsb-right {
+        float: right;
+        position: relative;
+        width: 420px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.8);
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        padding: 5px 30px;
+        text-align: left;
+        border-radius: 18px;
+        > input {
+          background: transparent;
+          height: 24px;
+          outline: none;
+          padding: 0;
+          width: 340px;
+        }
+        > button {
+          cursor: pointer;
+          height: 24px;
+          position: absolute;
+          right: 13px;
+          top: 8px;
+          width: 48px;
+          border: none;
+          background: rgba(255, 255, 255, 0.8);
+        }
+      }
+      .lgsb-list {
+        width: 420px;
+        font-size: 12px;
+        line-height: 15px;
+        overflow: hidden;
+        padding: 6px 30px 0;
+        text-align: left;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 5px;
+        right: 1px;
+        > li {
+          float: left;
+          margin-right: 10px;
+          > a {
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+}
+.main {
+  width: 100%;
+  min-height: 520px;
+  background-color: #e2e2e2;
+  position: relative;
+  border: 1px solid #e2e2e2;
+  .kongcart {
+    width: 1240px;
+    height: 520px;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    display: none;
+    position: relative;
+    .wrapper {
+      width: 640px;
+      height: 206px;
+      margin: 0 auto;
+      padding-top: 146px;
+      position: relative;
+      .kongCart-img {
+        height: 206px;
+        width: 295px;
+        border: 0;
+        vertical-align: middle;
+      }
+      p {
+        color: #bebebe;
+        font-size: 28px;
+        left: 340px;
+        position: absolute;
+        top: 220px;
+      }
+      .goshopping {
+        text-decoration: none;
+        color: #fff;
+        background: #fc673e;
+        font-size: 20px;
+        height: 40px;
+        left: 340px;
+        line-height: 40px;
+        position: absolute;
+        text-align: center;
+        top: 290px;
+        width: 120px;
+      }
+    }
+  }
+  .main-list {
+    width: 1120px;
+    margin: auto;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 20px;
+    > li {
+      float: left;
+      text-align: center;
+    }
+    .one {
+      width: 100%;
+      color: #333;
+      font-weight: 700;
+      height: 50px;
+      font-size: 14px;
+      line-height: 50px;
+
+      > ul {
+        width: 100%;
+        > li {
+          float: left;
+        }
+        > :nth-child(1) {
+          width: 100px;
+        }
+        > :nth-child(2) {
+          width: 350px;
+        }
+        > :nth-child(3) {
+          width: 200px;
+        }
+        > :nth-child(4) {
+          width: 200px;
+        }
+        > :nth-child(5) {
+          width: 150px;
+        }
+        > :nth-child(6) {
+          width: 100px;
+        }
+      }
+    }
+    .two {
+      .twodiv {
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+        font-size: 12px;
+        line-height: 100px;
+        color: #333;
+        background: rgba(194, 137, 14, 0.137);
+        > ul {
+          width: 100%;
+          > li {
+            float: left;
+          }
+          > :nth-child(1) {
+            width: 100px;
+          }
+          > :nth-child(2) {
+            width: 350px;
+            height: 100px;
+            overflow: hidden;
+            > img {
+              display: block;
+              float: left;
+              border: 1px solid #ddd;
+              border-radius: 5px;
+              height: 68px;
+              width: 68px;
+              margin-top: 15px;
+            }
+            > a {
+              display: block;
+              float: left;
+              width: 230px;
+              font-size: 12px;
+              color: #333;
+              line-height: 100px;
+              margin-left: 20px;
+            }
+          }
+          > :nth-child(3) {
+            width: 200px;
+          }
+          > :nth-child(4) {
+            width: 200px;
+            > div {
+              width: 80px;
+              height: 22px;
+              position: relative;
+              margin-top: 39px;
+              line-height: 22px;
+              > div {
+                width: 15px;
+                height: 20px;
+                position: absolute;
+                text-align: center;
+                user-select: none;
+                border: 1px solid rgb(204, 204, 204);
+                background: #fff;
+              }
+              .jianyi {
+                left: 0px;
+              }
+              .jiayi {
+                right: 0px;
+              }
+              > input {
+                width: 46px;
+                height: 18px;
+                position: absolute;
+                left: 17px;
+                border-top: 1px solid rgb(204, 204, 204);
+                border-right: none;
+                border-bottom: 1px solid rgb(204, 204, 204);
+                border-left: none;
+                border-image: initial;
+                text-align: center;
+              }
+            }
+          }
+          > :nth-child(5) {
+            width: 150px;
+            color: #ff3333;
+            font-weight: 600;
+          }
+          > :nth-child(6) {
+            width: 100px;
+          }
+          float: left;
+        }
+      }
+    }
+    .three {
+      width: 100%;
+      height: 70px;
+      margin-top: 15px;
+      position: relative;
+      //   bottom: 0;
+      > p {
+        position: absolute;
+        right: 400px;
+        top: 25px;
+        font-size: 15px;
+        color: #f33;
+        font-weight: 800;
+      }
+      > a {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 51, 51, 1) 0,
+          rgba(255, 102, 51, 1) 100%
+        );
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        right: 40px;
+        text-align: center;
+        text-indent: 0;
+        top: 10px;
+        width: 160px;
+      }
+    }
+  }
+}
+//底部
+.footer {
+  width: 100%;
+  height: 380px;
+  border-top: 1px solid #333;
+  > .footer-main {
+    width: 1180px;
+    height: 280px;
+    margin: auto;
+    padding: 50px 0;
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 30px;
+      margin-bottom: 27px;
+    }
+    > .footer1 {
+      float: left;
+      width: 264px;
+      height: 100%;
+      margin-right: 60px;
+      > p {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 6px;
+      }
+      .footer-f {
+        border-top: 1px solid #666;
+        line-height: 30px;
+        margin-top: 20px;
+        padding-top: 19px;
+        a {
+          display: block;
+          float: left;
+          color: #000;
+        }
+        .wx,
+        .wb {
+          width: 24px;
+          height: 20px;
+          margin-top: 5px;
+          margin-left: 20px;
+        }
+        .wx {
+          background: url(../image/jingling.png) no-repeat;
+          background-position: -11px -167px;
+        }
+        .wb {
+          background: url(../image/jingling.png) no-repeat;
+          background-position: -44px -167px;
+        }
+      }
+    }
+    > .footer2 {
+      float: left;
+      margin-right: 60px;
+      text-align: left;
+      > a {
+        display: block;
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 6px;
+        color: #666;
+      }
+    }
+    > .footer3 {
+      float: left;
+      width: 138px;
+      text-align: center;
+    }
+    > .footer4 {
+      border-left: 1px solid #979797;
+      float: right;
+      min-height: 230px;
+      text-align: center;
+      width: 300px;
+      > p {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 30px;
+      }
+      > span {
+        color: #999;
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+//结束
+.over {
+  width: 100%;
+  height: 198px;
+  background: #333;
+  .over-main {
+    width: 1180px;
+    height: 100%;
+    margin: auto;
+    background: #333;
+    > .over-title {
+      width: 1180px;
+      height: 80px;
+      border-bottom: 1px solid #666;
+      text-align: center;
+      > a {
+        color: #fff;
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+        margin-right: 150px;
+        vertical-align: top;
+        padding-top: 24px;
+        position: relative;
+        text-indent: 40px;
+        > i {
+          display: inline-block;
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          left: 0;
+          bottom: 0;
+          background: url(../image/jingling.png) no-repeat;
+        }
+      }
+      a:nth-child(1) > i {
+        background-position: -11px -197px;
+      }
+      a:nth-child(2) > i {
+        background-position: -46px -197px;
+      }
+      a:nth-child(3) > i {
+        background-position: -81px -197px;
+      }
+    }
+    > .oo {
+      font-size: 14px;
+      line-height: 20px;
+      padding: 18px 0 21px;
+      color: #fff;
+      > p {
+        text-align: center;
+      }
+      .ooo {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 12px;
+      }
+    }
+  }
+}

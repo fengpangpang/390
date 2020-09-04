@@ -1,7 +1,6 @@
 import $ from "./lib/jquery.js";
 import { cookie } from "./lib/cookie.js";
 import fn from "./big.js";
-import { get } from "jquery";
 (function () {
   let id = location.search.split("=")[1];
   $.ajax({
@@ -78,7 +77,7 @@ import { get } from "jquery";
       </div>
         <div class="bottombt clear_fix">
           <a href="javascript::" class="aaa2">立即购买</a>
-          <input type="button" class="aaa3" value="加入购物车"</input>
+          <input type="button" class="aaa3" value="加入购物车" onclick = "javascrtpt:window.location.href='./shopping.html'"></input>
         </div>
       </div>
       `;
@@ -92,6 +91,7 @@ import { get } from "jquery";
         });
 
       function addItem(id, price, num) {
+        console.log(num);
         let shop = cookie.get("shop");
 
         let product = {
@@ -99,9 +99,23 @@ import { get } from "jquery";
           price: price,
           num: num,
         };
-        console.log(product);
-      }
 
+        if (shop) {
+          shop = JSON.parse(shop);
+          if (shop.some((elm) => elm.id == id)) {
+            shop.forEach((elm) => {
+              console.log(elm.num);
+              elm.id === id ? (elm.num = num) : null;
+            });
+          } else {
+            shop.push(product);
+          }
+        } else {
+          shop = [];
+          shop.push(product);
+        }
+        cookie.set("shop", JSON.stringify(shop), 1);
+      }
       $(".xxxx").append(str1);
       fn();
     },
