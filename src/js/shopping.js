@@ -48,19 +48,19 @@ let removebtn = function () {
     $(this).parents(".twodiv").remove();
   });
 
-  /*   var shop = cookie.get("shop");
+  var shop = cookie.get("shop");
   shop = JSON.parse(shop);
   console.log(shop);
-  $(".btn").on("click", function () {
+  $(".btt").on("click", function () {
     let i = $(this);
-    let index = $(".btn").index(i);
-    let num = shop.forEach((val) => {
-      //   console.log(val.id,);
-      if (val.id == i.attr("class")) {
-        return shop.indexOf(val);
-      }
-    });
-  }); */
+    let index = $(".btn").index(this);
+    // let num = shop.forEach((val) => {
+    //   //   console.log(val.id,);
+    //   if (val.id == i.attr("class")) {
+    //     return shop.indexOf(val);
+    //   }
+    // });
+  });
   //   let removeCookie = function () {
   //     let shop = cookie.get("shop");
   //     shop = JSON.parse(shop);
